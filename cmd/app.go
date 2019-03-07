@@ -3,6 +3,7 @@ package cmd
 import (
 	"log"
 
+	"github.com/researchlab/confc/lib"
 	"github.com/spf13/cobra"
 )
 
@@ -15,5 +16,7 @@ func init() {
 
 func generate(cmd *cobra.Command, args []string) {
 	log.Println("generate comming")
+	log.Println("env")
+	lib.Show()
 	// Do Stuff Here
 }
