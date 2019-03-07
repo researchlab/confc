@@ -1,6 +1,4 @@
-# confc
-
-[![Build Status](https://travis-ci.org/kelseyhightower/confd.svg?branch=master)](https://travis-ci.org/kelseyhightower/confd)
+# confc.svg?branch=master)](https://travis-ci.org/researchlab/confc)
 
 `confc` is a lightweight configuration management tool focused on:
 
@@ -19,7 +17,7 @@ $ cd $GOPATH/src/github.com/researchlab/confc
 $ make
 ```
 
-You should now have confd in your `bin/` directory:
+You should now have confc in your `bin/` directory:
 
 ```
 $ ls bin/
@@ -28,7 +26,7 @@ confc
 
 ## Getting Started
 
-Before we begin be sure to [download and install confd](docs/installation.md).
+Before we begin be sure to [download and install confc](docs/installation.md).
 
 * [quick start guide](docs/quick-start-guide.md)
 
