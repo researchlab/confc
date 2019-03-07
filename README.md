@@ -1,4 +1,6 @@
-# confc.svg?branch=master)](https://travis-ci.org/researchlab/confc)
+# confc
+
+[![Build Status](https://travis-ci.org/researchlab/confc.svg?branch=master)](https://travis-ci.org/researchlab/confc)
 
 `confc` is a lightweight configuration management tool focused on:
 
