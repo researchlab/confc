@@ -2,11 +2,8 @@ language: go
 go:
   - 1.x
   - tip
-env:
-  - CONFC_TMPL='*.confc' CONFC_ENV='dev,local,prod,test' CONFC_DIST='config/' CONFC_TYPE='json'
 install:
   - make build
   - sudo make install
 script:
   - make test
-    #- make integration
