@@ -10,5 +10,5 @@ var RootCmd = &cobra.Command{
 	Long: `A tool which keeping local configuration files up-to-date using data stored in each env config file itself;
 	              is really convenience for multi-env config file generate.
                 `,
-	Run: generate,
+	RunE: genConf,
 }
