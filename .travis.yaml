@@ -9,4 +9,4 @@ install:
   - sudo make install
 script:
   - make test
-  - make integration
+    #- make integration
