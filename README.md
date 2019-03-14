@@ -1,6 +1,6 @@
 # confc
 
-[![Build Status](https://travis-ci.org/researchlab/confc.svg?branch=master)](https://travis-ci.org/researchlab/confc)
+[![Build Status](https://travis-ci.org/researchlab/confc.svg?branch=master)](https://travis-ci.org/researchlab/confc) [![Go Report Card](https://goreportcard.com/badge/github.com/researchlab/confc)](https://goreportcard.com/report/github.com/researchlab/confc)
 
 `confc` is a lightweight configuration management tool focused on:
 
