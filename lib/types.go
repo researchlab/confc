@@ -1,5 +1,6 @@
 package lib
 
+//config context
 type GenConfCtx struct {
 	Tmpl  string //template path
 	Env   string //config env, multi-env split by ',' default: dev

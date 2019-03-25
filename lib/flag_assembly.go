@@ -2,6 +2,7 @@ package lib
 
 import "fmt"
 
+//assembly config
 func Assembly(gcc *GenConfCtx) error {
 	if len(gcc.Tmpl) == 0 && gcc.Cache == OFF_CACHE {
 		return unsetenv()

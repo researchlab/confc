@@ -8,10 +8,6 @@ import (
 	"os"
 )
 
-//custom-defined-config
-//env-defined-config
-//default-config
-
 var (
 	CONFC_TMPL  = "CONFC_TMPL"  //(相对/非相对路径)  --tmpl (当前路径 *.confc文件) [数组]
 	CONFC_ENV   = "CONFC_ENV"   //(环境以逗号隔离) --env (dev)
