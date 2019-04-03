@@ -64,3 +64,22 @@ func homeWindows() (string, error) {
 
 	return home, nil
 }
+
+// CreatePath true path is exist; false maked path;
+func CreatePath(path string) (error, bool) {
+	if !isExist(path) {
+		return os.MkdirAll(path, os.ModePerm), false
+	}
+	return nil, true
+}
+
+func isExist(path string) bool {
+	_, err := os.Stat(path)
+	if err != nil {
+		if os.IsExist(err) {
+			return true
+		}
+		return false
+	}
+	return true
+}

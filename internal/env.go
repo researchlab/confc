@@ -53,27 +53,9 @@ func confPath() (string, error) {
 		return "", err
 	}
 	confPath := fmt.Sprintf("%s/.confc", home)
-	err = createFile(confPath)
+	err, _ = CreatePath(confPath)
 	confPath = fmt.Sprintf("%s/conf.json", confPath)
 	return confPath, err
-}
-
-func createFile(filePath string) error {
-	if !isExist(filePath) {
-		return os.MkdirAll(filePath, os.ModePerm)
-	}
-	return nil
-}
-
-func isExist(path string) bool {
-	_, err := os.Stat(path)
-	if err != nil {
-		if os.IsExist(err) {
-			return true
-		}
-		return false
-	}
-	return true
 }
 
 func setenv(envs map[string]string) error {
