@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/researchlab/confc/lib"
+	"github.com/researchlab/confc/internal"
 	"github.com/spf13/cobra"
 )
 
@@ -14,14 +14,14 @@ func init() {
 }
 
 func genConf(cmd *cobra.Command, args []string) error {
-	var genConfCtx = &lib.GenConfCtx{
+	var genConfCtx = &internal.GenConfCtx{
 		Tmpl:  tmpl,
 		Env:   env,
 		Dist:  dist,
 		Ptype: ptype,
 		Cache: cache,
 	}
-	err := lib.Assembly(genConfCtx)
+	err := internal.Assembly(genConfCtx)
 	if err != nil {
 		return err
 	}
