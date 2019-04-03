@@ -1,4 +1,4 @@
-package lib
+package internal
 
 //config context
 type GenConfCtx struct {
